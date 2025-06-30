@@ -1,1 +1,1 @@
-# blog_poo
+# Proyecto BlogX realizado con PHP POO
