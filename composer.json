@@ -1,0 +1,16 @@
+{
+    "name": "johanelber/proyecto-blog_johan_poo",
+    "description": "Proyecto Blog con POO",
+    "type": "project",
+    "authors": [
+        {
+            "name": "johanelber"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "./classes"
+        }
+    },
+    "require": {}
+}

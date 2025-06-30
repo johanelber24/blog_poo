@@ -1,0 +1,263 @@
+/* VARIABLES CSS */
+:root {
+    --primary: #126994;
+    --secondary: #5ca7cc;
+    --secondary-dark: #2a8bbb;
+    --black: #000000;
+    --white: #FFFFFF;
+    --gray-light: #e4e4e4;
+    --primary-dark: #0d4663;
+    --gray-dark: #6b6b6b;
+    --red-dark: #921f1f;
+    --red-light: #df4f4f;
+    --orange-dark: #ec922a;
+    --orange-ligth: #f3a955;
+    --green-dark: #2c8112;
+    --green-ligth: #4eb82e;
+}
+
+/* NAV */
+.header__nav-responsive {
+    display: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.nav-responsive__burger {
+    display: inline-block;
+    width: 3.6rem;
+    height: 3.6rem;
+    text-align: center;
+    font-size: 2.4rem;  
+}
+
+.nav-responsive__content {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 99;
+    padding: 1rem;
+    transform: translateY(5rem);
+    background-color: var(--white);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, .5);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 500ms ease;
+}
+
+.nav-responsive__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.header__nav-responsive:hover .nav-responsive__content {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+@media (max-width: 992px) {
+    .header__nav-responsive {
+        display: block;
+    }
+
+    .header__nav {
+        display: none;
+    }
+}
+
+/* BANNER */
+@media (max-width: 992px) {
+    .banner__title {
+        font-size: 6rem;
+    }
+
+    .banner__text {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner__title {
+        font-size: 5rem;
+    }
+
+    .banner__text {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .layout__banner {
+        height: 30rem;
+    }
+
+    .banner__title {
+        font-size: 3.6rem;
+    }
+
+    .banner__text {
+        font-size: 1.6rem;
+    }
+}
+
+/* LAYOUT BLOG */
+@media (max-width: 992px) {
+
+    .layout__blog {
+        grid-template-areas: 
+        "main main"
+        "aside aside"
+        ;
+        grid-template-columns: 100%;
+        row-gap: 8rem;
+    }
+
+    .articulos__ver-todos {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .main__title {
+        text-align: center;
+        font-size: 3.2rem;
+    }
+
+    .categoria__descripcion {
+        text-align: center;
+    }
+
+    .btn__ver-articulos {
+        font-size: 1.6rem;
+    }
+
+    .main-md {
+        text-align: center;
+    }
+
+    .articulos {
+        text-align: center;
+    }
+}
+
+@media (max-width: 575px) {
+    .layout__blog {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+}
+
+/* ARTICULO */
+@media (max-width: 768px) {
+    .articulo__title--v2 {
+        font-size: 2.8rem;
+    }
+
+    .articulo__info--v2 {
+        font-size: 1.4rem;
+    }
+
+    .articulo__categoria-link {
+        font-size: 2rem;
+    }
+    
+    .articulo__description {
+        font-size: 1.4rem;
+    }
+
+    .articulo__options {
+        flex-direction: column;
+    }
+
+    .articulo-options__btn {
+        width: 12rem;
+        font-size: 1.2rem;
+    }
+}
+
+/* ASIDE */
+@media (max-width: 992px) {
+
+    .buscador__contain {
+        max-width: 25rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .buscador__title {
+        text-align: center;
+        font-size: 2.2rem;
+    }
+
+    .buscador__contain {
+        max-width: 25rem;
+        margin: 0 auto;
+    }
+
+    .categorias__title {
+        text-align: center;
+        font-size: 2.2rem;
+    }
+
+    .categorias__list {
+        justify-content: center;
+    }
+}
+
+/* COMENTARIOS */
+@media (max-width: 768px) {
+    .articulo-comentarios__title {
+        font-size: 1.4rem;
+    }
+
+    .formulario__input--comentarios {
+        font-size: 1.4rem;
+    }
+
+    .formulario__submit--comentarios {
+        font-size: 1.6rem;
+    }
+
+    .articulo-comentario__user,
+    .articulo-comentario__content {
+        font-size: 1.4rem;
+    }
+
+    .articulo-comentario__fecha {
+        font-size: 1.3rem;
+    }
+
+    .articulo-comentario__eliminar {
+        font-size: 1.3rem;
+    }
+
+    .articulo-comentarios__vacio {
+        font-size: 1.4rem;
+    }
+}
+
+/* FOOTER */
+@media (max-width: 575px) {
+    .footer__text {
+        font-size: 1.5rem;
+    }
+}
+
+/* ALERTAS */ 
+@media (max-width: 768px) {
+    .alerta {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .user-welcome {
+        display: none;
+    }
+
+    .header__right {
+        display: block;
+    }
+}
