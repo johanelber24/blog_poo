@@ -28,10 +28,10 @@ use App\Articulo;
                 foreach($articulos as $articulo):
                 ?>
                 <article class="articulo">
-                    <a href="articulo.php?id=<?php echo htmlspecialchars($articulo->id); ?>" class="articulo__link">
-                        <h3 class="articulo__title"><?php echo htmlspecialchars($articulo->titulo); ?></h3>
-                        <p class="articulo__info"><?php echo htmlspecialchars($articulo->categoria); ?> | <?php echo htmlspecialchars($articulo->fecha); ?></p>
-                        <p class="articulo__description"><?php echo htmlspecialchars($articulo->resumen); ?></p>
+                    <a href="articulo.php?id=<?php echo s($articulo->id); ?>" class="articulo__link">
+                        <h3 class="articulo__title"><?php echo s($articulo->titulo); ?></h3>
+                        <p class="articulo__info"><?php echo s($articulo->categoria); ?> | <?php echo s($articulo->fecha); ?></p>
+                        <p class="articulo__description"><?php echo s($articulo->resumen); ?></p>
                     </a>
                 </article>
                 <?php
